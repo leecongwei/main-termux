@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument("host", nargs="?", help="主机进行压力测试")
 parser.add_argument(
-    "-p", "--port"网络服务器端口, 默认=80, help=", usually 80", type=int
+    "-p", "--port", default=80, help="网络服务器端口, 通常是80", type=int
 )
 parser.add_argument(
     "-s",
